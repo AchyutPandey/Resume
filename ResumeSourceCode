@@ -1,0 +1,234 @@
+\documentclass[a4paper]{article}
+    \usepackage{hyperref}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=5in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.4in,right=0.4in,bottom=0.3in,top=0.5in]{geometry}
+\usepackage{etoolbox,refcount}
+\usepackage{multicol}
+
+
+\newcounter{countitems}
+\newcounter{nextitemizecount}
+\newcommand{\setupcountitems}{%
+  \stepcounter{nextitemizecount}%
+  \setcounter{countitems}{0}%
+  \preto\item{\stepcounter{countitems}}%
+}
+\makeatletter
+\newcommand{\computecountitems}{%
+  \edef\@currentlabel{\number\c@countitems}%
+  \label{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\newcommand{\nextitemizecount}{%
+  \getrefnumber{countitems@\number\c@nextitemizecount}%
+}
+\newcommand{\previtemizecount}{%
+  \getrefnumber{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\makeatother    
+\newenvironment{AutoMultiColItemize}{%
+\ifnumcomp{\nextitemizecount}{>}{3}{\begin{multicols}{2}}{}%
+\setupcountitems\begin{itemize}}%
+{\end{itemize}%
+\unskip\computecountitems\ifnumcomp{\previtemizecount}{>}{3}{\end{multicols}}{}}
+
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.7ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=black,
+    pdftitle={Harsh's Resume},
+    pdfpagemode=FullScreen,
+    }
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2 
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-25pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-15pt}
+\begin{center}
+	{\Huge \scshape {Achyut Pandey}}\\
+	\vspace{4mm}
+ +91 8382929157  $\cdot$
+	\href{mailto:achyut23pandey@gmail.com}{achyut23pandey@gmail.com} $\cdot$  \href{https://www.linkedin.com/in/achyut-pandey-190b6724a/}{Linkedin} 
+ $\cdot$
+	\href{https://github.com/AchyutPandey}{GitHub} $\cdot$  \href{https://leetcode.com/u/Viper51/}{Leetcode} \\
+\end{center}
+\vspace{1mm}
+%==== Education ====%
+\header{Education}
+\vspace{1mm}
+\textbf{Indian Institute of Information Technology}\hfill Bhopal\\
+B.Tech Information Technology (CGPA-8.85 till $4^{th}$ sem) \hfill 2022 - Present\\
+\vspace{2mm}
+\textbf{GN National Public School}\hfill Gorakhpur\\
+Senior Secondary (92\%)\hfill 2021-22\\
+\vspace{2mm}
+\textbf{GN National Public School}\hfill Gorakhpur\\
+Secondary (96\%) \hfill 2019-20\\
+\vspace{5mm}
+ 
+% \header{Position of Responsibility }
+% \vspace{0mm}
+
+% \textbf{GNU/Linux Users Club} \hfill IIIT Bhopal \\
+% \textit{Club Secretary} \hfill August 2022 - Present\\
+% \vspace{-2.5mm}
+% \begin{itemize} \itemsep 1pt
+% 	\item Using MacOS as my main distribution but I also have experience in most Debian based (Ubuntu), Fedora and Arch based Distributions
+% 		\item Guiding batch mates to install and use Linux distributions comfortably. Also in-charge of troubleshooting problems for them. 
+% \end{itemize}
+
+\vspace{0mm}
+
+\header{Projects}
+\vspace{1mm}
+{\textbf{Fraud Detection Model}}\hfill{\href{https://github.com/AchyutPandey/Self-Organizing-Map}{\underline{Git Hub}} \hfill  \\
+\vspace{-2mm}
+\begin{itemize} 
+\item Implemented Self Organising Map (unsupervised ML) to find outliers in dataset of and detect potential frauds.
+    \item Conducted data exploration and handled missing values and outliers to ensure accuracy greater than 90\%.
+    
+    \item Evaluated the model's performance using key metrics like Mean Squared Error and Root Mean Squared Error.
+    \item Addressed data quality issues and provided a graphical output for easy readability of results.
+
+
+\end{itemize}
+{\textbf{Digit Recognition}}\hfill{\href{https://github.com/AchyutPandey/Digit-Recognition-System}{\underline{Git Hub}} \hfill  \\
+\vspace{-2mm}
+\begin{itemize} 
+	\item Developed a neural network for digit recognition using the MNIST dataset, achieving an accuracy of over 95\%.
+    \item Preprocessed dataset (flattening, resizing, and grayscaling) to improve accuracy and decrease training time by 30\%.
+    \item Utilized optimization algorithms like Adam to accelerate the training process and achieve optimal performance.
+    \item Evaluated model performance through various metrics such as accuracy and made a confusion matrix.
+
+
+\end{itemize}
+{\textbf{Stock Management Software}} \hfill  \\
+
+\vspace{-2mm}
+\begin{itemize} 
+	
+ \item Made a stock management system to digitalise inventory tracking and optimize supply, reducing manual work by 50\%.
+ \item Started with small features, growing with the use cases every day and adding new features.
+ \item Designed an intuitive user interface, which resulted in a 40 \% decrease in training time for new staff.
+ \item Performed rigorous testing, identifying and resolving bugs to deliver a robust and reliable system.
+ \end{itemize}
+ 
+{\textbf{Movie Recommending System}}\hfill{\href{https://github.com/AchyutPandey/Movie-Recommender-System}{\underline{Git Hub}}}\hfill  \\
+\vspace{-2mm}
+\begin{itemize} 
+    \item Designed a movie recommending system using machine learning and filtering techniques to suggest similar movies.
+    \item Utilized similarity metrics such as cosine similarity and Natural Language Toolkit to optimise searching.
+    \item Analysed exploratory data to understand patterns and implemented item-based filtering algorithms.
+    \item Integrated content-based filtering, considering movie genres, actors, and directors and improved accuracy by 50\%.
+    
+
+
+\end{itemize}
+
+\header{Skills}
+\vspace{3mm}
+\begin{tabular}{ l l }
+	Programming Languages: & C, C++, Python \\\vspace{1mm}
+	Devops Tools:  & GitHub, VS Code\\\vspace{1mm}
+	Database Management Systems: & MySQL\\\vspace{1mm}
+ Coursework: &Data Structure and Algorithms, Object Oriented Programming\\\vspace{1mm}
+	Machine Learning:       & Regression, Classification, \\\vspace{1mm}
+	Libraries / Frameworks: & NumPy, Pandas, Matplotlib, TensorFlow, Keras, ScikitLearn \vspace{1mm}
+ %Competitive Coding: &{\bf 2 Star @ CodeChef, 100+ problems solved on Leetcode}\\\vspace{1mm}
+	% Tech Stacks:             & MERN Stack (MongoDb , ExpressJs, ReactJs, NodeJs) \\
+	%Soft Skills:           &  Leadership, Communication Skills, Organised, Teamwork  \\
+	
+\end{tabular}
+
+
+\vspace{1mm}
+\header{Achievements}
+\vspace{-1mm}
+\begin{itemize} 
+    \item 2 Star @ CodeChef\vspace{-1mm}
+    \item 100+ problems @ Leetcode\vspace{-1mm}
+    \item Ranked 453 in Starters 130 (Div 3) @ CodeChef
+    
+    
+
+
+\end{itemize}
+%\header{Languages}
+%\vspace{2mm}
+%English, Hindi, German\\
+%\vspace{4mm}
+% \header{Interests}
+
+% \vspace{2mm}
+% \begin{tabular}{l l l}
+% Competitive Programming  &  
+%    Debating  &  
+%     Group Discussion  \\
+%     \end{tabular}
+\end{document}
