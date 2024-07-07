@@ -51,7 +51,7 @@
     linkcolor=black,
     filecolor=magenta,      
     urlcolor=black,
-    pdftitle={Harsh's Resume},
+    pdftitle={Achyut's Resume},
     pdfpagemode=FullScreen,
     }
 
@@ -116,7 +116,8 @@
  +91 8382929157  $\cdot$
 	\href{mailto:achyut23pandey@gmail.com}{achyut23pandey@gmail.com} $\cdot$  \href{https://www.linkedin.com/in/achyut-pandey-190b6724a/}{Linkedin} 
  $\cdot$
-	\href{https://github.com/AchyutPandey}{GitHub} $\cdot$  \href{https://leetcode.com/u/Viper51/}{Leetcode} \\
+	\href{https://github.com/AchyutPandey}{GitHub} $\cdot$ 
+ \href{https://www.codechef.com/users/viper51}{CodeChef} $\cdot$ \href{https://leetcode.com/u/Viper51/}{Leetcode} \\
 \end{center}
 \vspace{1mm}
 %==== Education ====%
@@ -150,11 +151,10 @@ Secondary (96\%) \hfill 2019-20\\
 {\textbf{Fraud Detection Model}}\hfill{\href{https://github.com/AchyutPandey/Self-Organizing-Map}{\underline{Git Hub}} \hfill  \\
 \vspace{-2mm}
 \begin{itemize} 
-\item Implemented Self Organising Map (unsupervised ML) to find outliers in dataset of and detect potential frauds.
+\item Implemented Self Organising Map (unsupervised ML) to find outliers in dataset and predict fraudulent customers.
     \item Conducted data exploration and handled missing values and outliers to ensure accuracy greater than 90\%.
     
-    \item Evaluated the model's performance using key metrics like Mean Squared Error and Root Mean Squared Error.
-    \item Addressed data quality issues and provided a graphical output for easy readability of results.
+    \item Evaluated the model's performance using key metrics like Mean Squared Error and Root Mean Squared Error. Also provided a graphical output for easy interpretation and readability of results through confusion matrix.
 
 
 \end{itemize}
@@ -162,22 +162,13 @@ Secondary (96\%) \hfill 2019-20\\
 \vspace{-2mm}
 \begin{itemize} 
 	\item Developed a neural network for digit recognition using the MNIST dataset, achieving an accuracy of over 95\%.
-    \item Preprocessed dataset (flattening, resizing, and grayscaling) to improve accuracy and decrease training time by 30\%.
-    \item Utilized optimization algorithms like Adam to accelerate the training process and achieve optimal performance.
-    \item Evaluated model performance through various metrics such as accuracy and made a confusion matrix.
+  \item Evaluated model performance through various metrics such as accuracy and made a confusion matrix.
+    \item Preprocessed dataset (flattening, resizing, and grayscaling) to improve accuracy and decrease training time by 30\%. Used Adam algorithm to accelerate training process further and achieve optimal performance.
+   
 
 
 \end{itemize}
-{\textbf{Stock Management Software}} \hfill  \\
 
-\vspace{-2mm}
-\begin{itemize} 
-	
- \item Made a stock management system to digitalise inventory tracking and optimize supply, reducing manual work by 50\%.
- \item Started with small features, growing with the use cases every day and adding new features.
- \item Designed an intuitive user interface, which resulted in a 40 \% decrease in training time for new staff.
- \item Performed rigorous testing, identifying and resolving bugs to deliver a robust and reliable system.
- \end{itemize}
  
 {\textbf{Movie Recommending System}}\hfill{\href{https://github.com/AchyutPandey/Movie-Recommender-System}{\underline{Git Hub}}}\hfill  \\
 \vspace{-2mm}
@@ -190,6 +181,15 @@ Secondary (96\%) \hfill 2019-20\\
 
 
 \end{itemize}
+{\textbf{Stock Management Software}} \hfill  {\href{https://github.com/AchyutPandey/StockManagement}{\underline{Git Hub}} \hfill  \\
+
+\vspace{-2mm}
+\begin{itemize} 
+	
+ \item Made a stock management system to digitalise inventory tracking and optimize supply, reducing manual work by 50\%.
+ \item Designed an intuitive user interface, which resulted in a 40\% decrease in training time for new staff.
+ \item Performed rigorous testing, identifying and resolving bugs to deliver a robust and reliable system.
+ \end{itemize}
 
 \header{Skills}
 \vspace{3mm}
@@ -198,7 +198,7 @@ Secondary (96\%) \hfill 2019-20\\
 	Devops Tools:  & GitHub, VS Code\\\vspace{1mm}
 	Database Management Systems: & MySQL\\\vspace{1mm}
  Coursework: &Data Structure and Algorithms, Object Oriented Programming\\\vspace{1mm}
-	Machine Learning:       & Regression, Classification, \\\vspace{1mm}
+	Machine Learning:       & Regression, Classification, Clustering \\\vspace{1mm}
 	Libraries / Frameworks: & NumPy, Pandas, Matplotlib, TensorFlow, Keras, ScikitLearn \vspace{1mm}
  %Competitive Coding: &{\bf 2 Star @ CodeChef, 100+ problems solved on Leetcode}\\\vspace{1mm}
 	% Tech Stacks:             & MERN Stack (MongoDb , ExpressJs, ReactJs, NodeJs) \\
@@ -211,9 +211,12 @@ Secondary (96\%) \hfill 2019-20\\
 \header{Achievements}
 \vspace{-1mm}
 \begin{itemize} 
-    \item 2 Star @ CodeChef\vspace{-1mm}
-    \item 100+ problems @ Leetcode\vspace{-1mm}
-    \item Ranked 453 in Starters 130 (Div 3) @ CodeChef
+     \item 130+ problems @ Leetcode\vspace{-1mm}
+    \item 2 Star (Highest 1590) @ CodeChef\vspace{-1mm}
+    \item Ranked 453 in Starters 130 (Div 3) @ CodeChef\vspace{-1mm}
+    \item Ranked $4^{th}$ in Hackathon conducted by IEEE IIIT Bhopal\vspace{-1mm}
+    \item Supervised Machine Learning Certification at Coursera    (\href{https://coursera.org/share/cfab131bcbb236de3da49f2e93535e5f}{\underline{Link}})
+    
     
     
 
