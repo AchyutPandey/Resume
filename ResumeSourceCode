@@ -154,9 +154,9 @@ Senior Secondary (92\%)\hfill 2021-22\\
     \item Implemented \textbf{feature scaling} to reduce impact of outliers, bringing data to same scale ensuring a minimum accuracy\\
     of 90\%, also conducted thorough data exploration and cleaning to further optimize and tune model performance
     \vspace{-2mm}
-    \item Evaluated the model's performance using key metrics like \textbf{Mean Squared Error} and \textbf{Root Mean Squared Error}. Also provided graphical output for easy interpretation and readability of results through a 10x10 \textbf{Confusion matrix}
+    \item Evaluated the model's performance using key metrics like \textbf{Mean Squared Error} and \textbf{Root Mean Squared Error} and provided graphical output for easy interpretation and readability of results through a 10x10 \textbf{Confusion matrix}
     \vspace{-2mm}
-    \item Modified the code aiming to minimise manual work by automating the process of entering co-ordinates of outliers from confusion matrix and printing the Id of fraudulent applications mapped to those cells in the matrix.
+    \item Modified the code aiming to minimise manual work by automating the process of entering co-ordinates of outliers from confusion matrix and printing the Id of fraudulent applications mapped to those cells in the matrix
 \end{itemize}
 
 \vspace{-2mm}
@@ -168,7 +168,7 @@ Senior Secondary (92\%)\hfill 2021-22\\
  \vspace{-2mm}
  \item Combined 4 layers of neural network (input, hidden and output) to improve efficiency, used activation functions like \textbf{Sigmoid} and \textbf{ReLU}, evaluated model performance through metrics like \textbf{loss function} and \textbf{accuracy} 
  \vspace{-2mm}
-  \item Utilised \textbf{Adam} optimizer to reduce the loss function of \textbf{sparse categorical cross entropy}, generated a Confusion Matrix to visualise digits with frequent error and added more training data for those digits to improve performance
+  \item Utilised \textbf{Adam} optimizer to reduce the loss function of \textbf{sparse categorical cross entropy}, generated a 10x10 Confusion Matrix to visualise particular digits with frequent error and added more training data for those digits
   
   \vspace{-2mm}
     \item Preprocessed dataset by flattening, resizing, reshaping and gray scaling images to improve accuracy and decrease training time by 30\% by using lower resolution images, fine-tuned the \textbf{epochs} to increase reliability of model
@@ -199,9 +199,9 @@ Senior Secondary (92\%)\hfill 2021-22\\
  \item Made a stock management software through \textbf{python} language and using \textbf{MySQL} as Database Management System aimed to digitalize inventory tracking and supply chain to reduce manual work and increase operational efficiency
  
  \vspace{-2mm}
- \item Designed \textbf{database schemas} and by decomposing main table into 2 tables to efficiently store and manage data, Utilized \textbf{SQL queries} for data retrieval, updates and transactions to maintain accurate data after sale of items
+ \item Designed \textbf{database schemas} and by decomposing main table into 2 tables to efficiently store and manage data, also utilized \textbf{SQL queries} for data retrieval, updates and transactions to maintain accurate data after sale of items
  \vspace{-2mm}
- \item Implemented authentication and authorization mechanisms to ensure data security and access control, Performed rigorous testing, identifying and resolving bugs to deliver a robust, optimized and reliable system
+ \item Implemented authentication and authorization mechanisms to ensure data security and access control, performed rigorous testing along with identifying and resolving bugs to deliver a robust, optimized and reliable system
  \end{itemize}
 \vspace{-1mm}
 \header{Skills}
@@ -223,7 +223,7 @@ Senior Secondary (92\%)\hfill 2021-22\\
 
 \vspace{1mm}
 \header{Achievements}
-\vspace{-1mm}
+\vspace{-2mm}
 \begin{itemize} 
      \item Solved more than \textbf{300 problems} related to Data Structure and Algorithms on various coding platforms like LeetCode, GeeksforGeeks and CodeStudio with approximately \textbf{100 easy}, \textbf{150 medium} and \textbf{50 hard} questions\vspace{-2mm}
     \item Reached \textbf{3 Star} on CodeChef (Highest rating of 1617) demonstrating competitive programming skills\\
