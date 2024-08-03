@@ -104,34 +104,33 @@
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
     \begin{document}
-\vspace*{-25pt}
+\vspace*{-45pt}
 
     
 
 %==== Profile ====%
-\vspace*{-15pt}
 \begin{center}
 	{\Huge \scshape {Achyut Pandey}}\\
-	\vspace{4mm}
+	\vspace{2mm}
  +91 8382929157  $\cdot$
 	\href{mailto:achyut23pandey@gmail.com}{achyut23pandey@gmail.com} $\cdot$   \href{https://www.linkedin.com/in/achyut-pandey-190b6724a/}{\textcolor{blue}{Linkedin} }
  $\cdot$
 	\href{https://github.com/AchyutPandey}{\textcolor{blue}{GitHub}} $\cdot$ 
  \href{https://www.codechef.com/users/viper51}{\textcolor{blue}{CodeChef}} $\cdot$ \href{https://leetcode.com/u/Viper51/}{\textcolor{blue}{Leetcode}} \\
 \end{center}
-\vspace{1mm}
+\vspace{-1mm}
 %==== Education ====%
 \header{Education}
 \vspace{1mm}
 \textbf{Indian Institute of Information Technology}\hfill Bhopal\\
 B.Tech Information Technology\hfill (CGPA-8.85) 2022 - 2026\\
-\vspace{2mm}
+\vspace{1mm}
 \textbf{GN National Public School}\hfill Gorakhpur\\
 Senior Secondary (92\%)\hfill 2021-22\\
+%\vspace{1mm}
+%\textbf{GN National Public School}\hfill Gorakhpur\\
+%Secondary (96\%) \hfill 2019-20\\
 \vspace{2mm}
-\textbf{GN National Public School}\hfill Gorakhpur\\
-Secondary (96\%) \hfill 2019-20\\
-\vspace{5mm}
  
 % \header{Position of Responsibility }
 % \vspace{0mm}
@@ -144,62 +143,77 @@ Secondary (96\%) \hfill 2019-20\\
 % 		\item Guiding batch mates to install and use Linux distributions comfortably. Also in-charge of troubleshooting problems for them. 
 % \end{itemize}
 
-\vspace{0mm}
 
 \header{Projects}
 \vspace{1mm}
-{\textbf{Fraud Detection Model}}\hfill{\href{https://github.com/AchyutPandey/Self-Organizing-Map}{{\textcolor{blue}{GitHub}}} \hfill  \\
+{\textbf{Fraud Detection Model}}\hfill{\href{https://github.com/AchyutPandey/Self-Organizing-Map}{{\textcolor{blue}{GitHub}}}} \hfill  \\
 \vspace{-2mm}
 \begin{itemize} 
-\item Implemented \textbf{Self Organising Map} (unsupervised ML) to find outliers in dataset and predict fraudulent customers
-    \item Conducted data exploration and handled missing values and outliers to ensure accuracy greater than 90\%
-    
-    \item Evaluated the model's performance using key metrics like \textbf{Mean Squared Error} and \textbf{Root Mean Squared Error}. Also provided a graphical output for easy interpretation and readability of results through confusion matrix
-
-
+    \item Applied \textbf{Self Organising Map} (unsupervised ML) to find outliers in a credit-card dataset and predict potential fraudulent customers, utilized more than 5 libraries like \textbf{Minisom}, \textbf{Scikit-learn}, Matplotlib, NumPy and Pandas
+    \vspace{-2mm}
+    \item Implemented \textbf{feature scaling} to reduce impact of outliers, bringing data to same scale ensuring a minimum accuracy\\
+    of 90\%, also conducted thorough data exploration and cleaning to further optimize and tune model performance
+    \vspace{-2mm}
+    \item Evaluated the model's performance using key metrics like \textbf{Mean Squared Error} and \textbf{Root Mean Squared Error}. Also provided graphical output for easy interpretation and readability of results through a 10x10 \textbf{Confusion matrix}
+    \vspace{-2mm}
+    \item Modified the code aiming to minimise manual work by automating the process of entering co-ordinates of outliers from confusion matrix and printing the Id of fraudulent applications mapped to those cells in the matrix.
 \end{itemize}
-{\textbf{Digit Recognition}}\hfill{\href{https://github.com/AchyutPandey/Digit-Recognition-System}{\textcolor{blue}{GitHub}} \hfill  \\
+
+\vspace{-2mm}
+
+{\textbf{Digit Recognition}}\hfill{\href{https://github.com/AchyutPandey/Digit-Recognition-System}{\textcolor{blue}{GitHub}}} \hfill  \\
 \vspace{-2mm}
 \begin{itemize} 
-	\item Developed a \textbf{neural network} for digit recognition using the MNIST dataset, achieving an accuracy of over 95\%
-  \item Evaluated model performance through various metrics such as accuracy and made a \textbf{confusion matrix}
-    \item Preprocessed dataset (flattening, resizing, and grayscaling) to improve accuracy and decrease training time by 30\%. Used \textbf{Adam algorithm} to accelerate training process further and achieve optimal performance
+	\item Engineered a \textbf{neural network} to classify hand-written digits as 0-9 using libraries like \textbf{TensorFlow} and \textbf{Keras} for training the neural network, also used \textbf{OpenCV}, \textbf{Seaborn} and \textbf{Matplotlib} for image processing and plotting
+ \vspace{-2mm}
+ \item Combined 4 layers of neural network (input, hidden and output) to improve efficiency, used activation functions like \textbf{Sigmoid} and \textbf{ReLU}, evaluated model performance through metrics like \textbf{loss function} and \textbf{accuracy} 
+ \vspace{-2mm}
+  \item Utilised \textbf{Adam} optimizer to reduce the loss function of \textbf{sparse categorical cross entropy}, generated a Confusion Matrix to visualise digits with frequent error and added more training data for those digits to improve performance
+  
+  \vspace{-2mm}
+    \item Preprocessed dataset by flattening, resizing, reshaping and gray scaling images to improve accuracy and decrease training time by 30\% by using lower resolution images, fine-tuned the \textbf{epochs} to increase reliability of model
    
 
 
 \end{itemize}
-
+\vspace{-2mm}
  
 {\textbf{Movie Recommending System}}\hfill{\href{https://github.com/AchyutPandey/Movie-Recommender-System}{\textcolor{blue}{GitHub}}}\hfill  \\
 \vspace{-2mm}
 \begin{itemize} 
-    \item Designed a movie recommending system using machine learning and filtering techniques to suggest similar movies
-    \item Utilized similarity metrics such as \textbf{cosine similarity} and \textbf{Natural Language Toolkit} to optimise searching
-    \item Analysed exploratory data to understand patterns and implemented item-based filtering algorithms
-    \item Integrated content-based filtering, considering movie genres, actors, and directors and improved accuracy by 50\%
+    \item Designed a movie recommending system using machine learning and filtering techniques to suggest movies similar to a input movie, utilised more than 4 libraries such as \textbf{Natural Language Toolkit}, \textbf{Scikit-learn}, NumPy and Pandas
+    \vspace{-2mm}
+    \item Employed similarity metrics such as \textbf{Cosine similarity} to train model based on movie data and leveraged 2 functions named \textbf{CountVectorizer} and \textbf{PorterStemmer} to improve model performance by removing irrelevant words 
+    \vspace{-2mm}
+    \item Analysed data to understand patterns and performed feature engineering to enhance input data quality, Executed item-based and content-based filtering considering more than 4 parameters such as movie genre, actors and directors
     
 
 
 \end{itemize}
-{\textbf{Stock Management Software}} \hfill  {\href{https://github.com/AchyutPandey/StockManagement}{\textcolor{blue}{GitHub}} \hfill  \\
+\vspace{-1mm}
+{\textbf{Stock Management Software}} \hfill  {\href{https://github.com/AchyutPandey/StockManagement}{\textcolor{blue}{GitHub}}} \hfill  \\
 
 \vspace{-2mm}
 \begin{itemize} 
 	
- \item Made a stock management system to digitalise inventory tracking and optimize supply, reducing manual work by 50\%
- \item Designed an intuitive user interface, which resulted in a 40\% decrease in training time for new staff
- \item Performed rigorous testing, identifying and resolving bugs to deliver a robust and reliable system
+ \item Made a stock management software through \textbf{python} language and using \textbf{MySQL} as Database Management System aimed to digitalize inventory tracking and supply chain to reduce manual work and increase operational efficiency
+ 
+ \vspace{-2mm}
+ \item Designed \textbf{database schemas} and by decomposing main table into 2 tables to efficiently store and manage data, Utilized \textbf{SQL queries} for data retrieval, updates and transactions to maintain accurate data after sale of items
+ \vspace{-2mm}
+ \item Implemented authentication and authorization mechanisms to ensure data security and access control, Performed rigorous testing, identifying and resolving bugs to deliver a robust, optimized and reliable system
  \end{itemize}
-
+\vspace{-1mm}
 \header{Skills}
-\vspace{3mm}
+\vspace{1mm}
 \begin{tabular}{ l l }
-	Programming Languages: & C, C++, Python \\\vspace{1mm}
-	Devops Tools:  & GitHub, VS Code\\\vspace{1mm}
-	Database Management Systems: & MySQL\\\vspace{1mm}
- Coursework: & DSA, DBMS, Object Oriented Programming, Computer Networks, Operating System\\\vspace{1mm}
-	Machine Learning:       & Regression, Classification, Clustering \\\vspace{1mm}
-	Libraries / Frameworks: & NumPy, Pandas, Matplotlib, TensorFlow, Keras, ScikitLearn \vspace{1mm}
+	Programming Languages: & C, C++, Python, LaTeX, Matlab, SQL \\
+	Devops Tools:  & Git, GitHub, VS Code\\
+	Database Management Systems: & MySQL\\
+ Coursework: & Data Structure and Algorithms, OOPs, Computer Networks, Operating System\\
+	Machine Learning:       & Regression, Decision Tree, Random Forest Classification, Clustering \\
+	Libraries / Frameworks: & TensorFlow, Keras, ScikitLearn, Seaborn, Matplotlib, NumPy, Pandas 
+ \vspace{1mm}
  %Competitive Coding: &{\bf 2 Star @ CodeChef, 100+ problems solved on Leetcode}\\\vspace{1mm}
 	% Tech Stacks:             & MERN Stack (MongoDb , ExpressJs, ReactJs, NodeJs) \\
 	%Soft Skills:           &  Leadership, Communication Skills, Organised, Teamwork  \\
@@ -211,11 +225,13 @@ Secondary (96\%) \hfill 2019-20\\
 \header{Achievements}
 \vspace{-1mm}
 \begin{itemize} 
-     \item 130+ problems @ Leetcode\vspace{-1mm}
-    \item 2 Star (Highest 1590) @ CodeChef\vspace{-1mm}
-    \item Ranked 453 in Starters 130 (Div 3) @ CodeChef\vspace{-1mm}
-    \item Ranked $4^{th}$ in Hackathon conducted by IEEE IIIT Bhopal\vspace{-1mm}
-    \item Supervised Machine Learning Certification at Coursera    (\href{https://coursera.org/share/cfab131bcbb236de3da49f2e93535e5f}{\textcolor{blue}{Link}})
+     \item Solved more than \textbf{300 problems} related to Data Structure and Algorithms on various coding platforms like LeetCode, GeeksforGeeks and CodeStudio with approximately \textbf{100 easy}, \textbf{150 medium} and \textbf{50 hard} questions\vspace{-2mm}
+    \item Reached \textbf{3 Star} on CodeChef (Highest rating of 1617) demonstrating competitive programming skills\\
+     Ranked \textbf{453} in Starters 130 (Div 3) @ CodeChef\vspace{-2mm}
+    \item Ranked $4^{th}$ in a Hackathon in IIIT Bhopal, developed a Tele-Medicine Kiosk software through Machine Learning solving the problem statement by Ministry of Health of Kerala Government\vspace{-2mm}
+    \item Earned a Supervised Machine Learning Certification at Coursera by completing the machine learing course(\href{https://coursera.org/share/cfab131bcbb236de3da49f2e93535e5f}{\textcolor{blue}{Link}})\vspace{-2mm}
+    \item Completed Google Cloud Study Jam program which lasted for 8 weeks finishing all courses and earned a certificate from Google demonstrating interest in Cloud Computing and Generative AI
+    
     
     
     
